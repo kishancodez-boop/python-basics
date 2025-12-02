@@ -6,14 +6,19 @@
 # print(factorial(int(input("Enter the number to find the factorial : "))))
 
 
-def Fibonacci(n):
-    if n <= 0:
-        return "Incorrect / invalid input"
-    elif n == 1:
-        return 0
-    elif n == 2:
-        return 1
-    else:
-        return Fibonacci(n-1) + Fibonacci(n-2)
-print(Fibonacci(int(input("Enter the number to find the Fibonacci series : "))))
+# def Fibonacci(n):
+#     if n <= 0:
+#         return "Incorrect / invalid input"
+#     elif n == 1:
+#         return 0
+#     elif n == 2:
+#         return 1
+#     else:
+#         return Fibonacci(n-1) + Fibonacci(n-2)
+# print(Fibonacci(int(input("Enter the number to find the Fibonacci series : "))))
+
+a =1 
+b= 2
+print("hello world")
+print(a+b)
     
