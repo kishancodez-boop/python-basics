@@ -17,8 +17,10 @@
 #         return Fibonacci(n-1) + Fibonacci(n-2)
 # print(Fibonacci(int(input("Enter the number to find the Fibonacci series : "))))
 
-a =1 
-b= 2
-print("hello world")
-print(a+b)
-    
+class person():
+    name="kishan"
+    age=18
+    def info(self):
+        print(f"{self.name}is {self.age}years old")
+a=person()
+a.info()
