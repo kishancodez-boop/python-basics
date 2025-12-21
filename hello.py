@@ -18,9 +18,24 @@
 # print(Fibonacci(int(input("Enter the number to find the Fibonacci series : "))))
 
 class person():
-    name="kishan"
-    age=18
+    def __init__(self,name,age):
+        self.name=name
+        self.age=age
+    
     def info(self):
-        print(f"{self.name}is {self.age}years old")
-a=person()
+        print(f"{self.name} is {self.age}years old")
+class employee(person):
+    def __init__(self,name,age,language,job):
+        super().__init__(name,age)
+        self.language=language
+        self.job=job
+    def info(self):
+        super().info()
+        print(f"{self.name} knows {self.language} and works as a {self.job}")   
+        
+a=employee(input("enter name : "),int(input("enter ur age : ")),input("enter your language : "),input("enter your job : "))
 a.info()
+
+
+
+
