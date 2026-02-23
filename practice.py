@@ -18,8 +18,10 @@ class s:
         self.salary=salary
     @classmethod
     def spt(clr,string):
-        return clr(string.split("-")[0],string.split("-")[1])
-string=input("enter the name and salary with - in between : ")
-print(a=s.spt(string))
+        name,salary=string.split("-")
+        return clr(name,salary)
+S=s.spt(input("enter the name and salary with - in between : "))
+print(S.__dict__)
+# print(S.name,"has a salary of",S.salary)
 # print(a.name)
 # print(a.salary)
